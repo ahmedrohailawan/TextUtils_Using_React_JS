@@ -1,9 +1,7 @@
 import React, {useState} from 'react'
-import { Routes, Route} from "react-router-dom";
 import Navbar from './components/Navbar/Navbar'
 import Alert from './components/Alert/Alert'
 import Home from './pages/Home/Home'
-import About from './pages/About/About'
 
 function App() {
   // dark and light modes
@@ -36,13 +34,7 @@ function App() {
     <>  
       <Navbar title="TextUtils" mode={mode} togglemode = {togglemode}/>
       <Alert alert = {alert}/>
-      <Routes>
-        <Route exact path="/" element={<Home mode={mode} showalert = {showalert}/>} />
-        <Route exact path="/index.html" element={<Home mode={mode} showalert = {showalert}/>} />
-        <Route exact path="about" element={<About mode={mode} showalert = {showalert} />} />
-      </Routes>  
-
-    
+      <Home mode={mode} showalert = {showalert}/>    
     </>
   );
 }
