@@ -1,0 +1,20 @@
+.container>h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.container>h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+.container>.form-group{
+    border-radius: 20px;
+}
+
+.btn{
+    margin-top: 10px;
+    margin-right: 10px;
+}

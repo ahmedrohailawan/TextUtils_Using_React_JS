@@ -1,0 +1,14 @@
+.container{
+    margin-top: 20px;
+}
+.container>h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #2588ef;
+    font-weight: bold;
+}
+.btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

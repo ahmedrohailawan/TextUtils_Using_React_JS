@@ -1,0 +1,12 @@
+.form-switch{
+    color: white;
+}
+.form-switch>input{
+    box-shadow: none;
+}
+.form-check-input:checked {
+    border-color: white;
+}
+.form-check-input:focus {
+    box-shadow: none;
+}
