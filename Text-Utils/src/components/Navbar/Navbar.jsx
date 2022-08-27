@@ -4,6 +4,12 @@ import './Navbar.css'
 import {Link } from "react-router-dom";
 
 function Navbar(props) {
+    var modetext
+    if (props.mode === "dark"){
+        modetext = "Disable Dark Mode"
+    }else{
+        modetext = "Enable Dark Mode"
+    }
     return (
         <>
             <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode}`}>
@@ -23,7 +29,7 @@ function Navbar(props) {
                         </ul>
                         <div className="form-check form-switch">
                             <input style={{backgroundColor: props.mode === "dark" ? "black" : "white"}} onClick={props.togglemode} className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-                            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
+                            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{modetext}</label>
                         </div>
                     </div>
                 </div>
